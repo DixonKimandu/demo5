@@ -49,7 +49,8 @@ body, html {
   display: none;
 }
 
-@media screen and (max-width: 620px) {
+
+@media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -57,7 +58,7 @@ body, html {
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -119,10 +120,20 @@ transform: translate(0, 0);
   height: 100%;
 }
 
-@media screen and (max-width: 620px) {
-
-  .parallax,.p_over {
+@media screen and (max-width: 600px) {
+  .parallax{
+  background-image: url('../img/img14.jpg');
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+    }
+    .p_over {
     width: 100%;
+  }
+  .parallax p{
+    margin-top: 40%;
   }
 }
 
@@ -154,6 +165,38 @@ transform: translate(0, 0);
   clear: right;
 }
 
+.animation-element-package {
+  position: relative;
+  width: 22.5%;
+  /margin: 0% 1.33 2.66% 1.33%;
+  float: left;
+}
+
+/*4 grid layout (Packages)*/
+
+.animation-element-package:nth-of-type(3n-3) {
+  width: 23.625%;
+  margin: 0% 0.5% 0.5% 0%;
+  /clear: left;
+}
+
+.animation-element-package:nth-of-type(3n-2) {
+  width: 23.625%;
+  margin: 0% 0.5% 0.5% 0%;
+  /clear: left;
+}
+
+.animation-element-package:nth-of-type(3n-1) {
+  width: 23.625%;
+  margin: 0% 0.5% 0.5% 0%;
+}
+
+.animation-element-package:nth-of-type(3n-0) {
+  width: 23.625%;
+  margin: 0% 0.5% 0.5% 0%;
+  /clear: right;
+}
+
 /*bounce up animation for the subject*/
 
 .bounce-up .subject {
@@ -183,7 +226,7 @@ transform: translate(0, 0);
 
 /*media queries for small devices*/
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 600px) {
   .main-container {
     margin: 20px 15px;
   }
@@ -194,19 +237,35 @@ transform: translate(0, 0);
     width: 100%;
     margin: 0px 0px 30px 0px;
   }
+}
 
+/*4 grid layout*/
+/*media queries for small devices*/
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    margin: 20px 15px;
+  }
+  .animation-element-package,
+   .animation-element-package:nth-of-type(3n-3),
+  .animation-element-package:nth-of-type(3n-1),
+  .animation-element-package:nth-of-type(3n-2),
+  .animation-element-package:nth-of-type(3n-0) {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+  }
 }
 
 /*Animations*/
 
-/*Products*/
+/*Packages*/
 #packages{
   background-position: center;
-  /background-size: cover;
-  padding: 15px;
+  background-size: cover;
+  /padding: 15px;
   color: #fff;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   text-align: left;
 }
 .packages h1{
@@ -241,13 +300,16 @@ transform: translate(0, 0);
 background: rgba(29, 184, 222, 0.25);
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:600px) {
   /* For mobile phones: */
   .package {
     width:100%;
   }
+  #packages{
+    height: 1500px;
+  }
 }
-/*Products*/
+/*Packages*/
 
 /*About*/
 #about{
@@ -287,6 +349,9 @@ background: rgba(29, 184, 222, 0.25);
   /* For mobile phones: */
   .menu, .main, .right {
     width:100%;
+  }
+  #about{
+    height: 900px;
   }
 }
 /*About*/
@@ -329,6 +394,9 @@ background: rgba(29, 184, 222, 0.25);
   /* For mobile phones: */
   .e1, .e2 {
     width:100%;
+  }
+  #entertainment{
+    height: 800px;
   }
 }
 /*Entertainment*/
@@ -378,6 +446,9 @@ background: rgba(29, 184, 222, 0.25);
   .s1, .s2 {
     width:100%;
   }
+  #study{
+    height: 600px;
+  }
 }
 /*Study*/
 
@@ -407,27 +478,51 @@ background: rgba(29, 184, 222, 0.25);
 }
 
 .game{
-  /margin-bottom: 20%;
-  height: 60%;
+  margin-top: 0%;
+  height: 400px;
+  width: 100%;
   border: 2px solid #1db8de;
   border-radius: 20px;
-  padding-bottom: 50px;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .game img{
   border-radius: 20px;
 }
 
+#g1{
+  background-image: url(../img/img1.jpg);
+
+}
+
+#g2{
+  background-image: url(../img/img9.jpg);
+}
+
+#g3{
+  background-image: url(../img/img13.jpg);
+}
+
 .game h1{
-  padding: 5px;
+  margin-top: 70%;
 }
 @media only screen and (max-width:600px) {
   /* For mobile phones: */
   .game {
     width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
   }
-  .game img{
-    width: 100%;
+  .game h1{
+    margin-top: 95%;
+    align-items: center;
+  }
+  #gaming{
+    height: 1700px;
   }
 }
 /*Gaming*/
@@ -561,6 +656,13 @@ footer{
   .footer, .footer-wrapper, .single-footer{
     width:100%;
   }
+  footer{
+  height: 650px;
+  }
+  .copy{
+    top: 70%;
+  }
+}
 /*Footer End*/
 
 /*FAQ*/
@@ -569,3 +671,4 @@ footer{
 
 }
 /*FAQ*/
+

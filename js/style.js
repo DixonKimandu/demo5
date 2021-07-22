@@ -1,5 +1,5 @@
 /*Navbar Start*/
-function myFunction() {
+function myNavbar() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -26,7 +26,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 2500, function(){
+      }, 1500, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -87,6 +87,35 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 /*Scroll Animation*/
 
+/*4 grid Scroll Animation*/
+var $animation_elements_p = $('.animation-element-package');
+var $window_p = $(window);
+
+function check_if_in_view_p() {
+  var window_height = $window_p.height();
+  var window_top_position = $window_p.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements_p, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+      (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+$window_p.on('scroll resize', check_if_in_view_p);
+$window_p.trigger('scroll');
+/*4 grid Scroll Animation*/
+
 /*Fade In Animation*/
 $(document).on("scroll", function() {
 var pageTop = $(document).scrollTop();
@@ -112,3 +141,4 @@ $(document).ready(function(){
   });
 });
 /*FAQ Toggle*/
+
