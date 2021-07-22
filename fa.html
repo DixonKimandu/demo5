@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dunda Homes</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+    $( "#minus" ).css( "display", "inline" );
+    $( "#plus" ).css( "display", "none" );
+    $("#flip2").click(function(){
+    $("#panel2").slideDown({top:"+=60px"},"slow");
+    });
+  });
+});
+$(document).ready(function(){
+
+});
+</script>
+<style>
+  #panel, #flip {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 30%;
+    padding: 5px;
+    text-align: left;
+    background-color: #fff;
+    border: solid 1px #c3c3c3;
+  }
+
+  #panel {
+    /padding: 50px;
+    display: none;
+    top: 35%;
+    text-align: left;
+  }
+
+  #panel2, #flip2 {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 35%;
+    padding: 5px;
+    text-align: left;
+    background-color: #fff;
+    border: solid 1px #c3c3c3;
+  }
+
+  #panel2 {
+    /padding: 50px;
+    display: none;
+    top: 65%;
+    text-align: left;
+  }
+
+  i{
+    padding-left:5px;
+    padding-right:40px;
+  }
+
+  #minus{
+    display: none;
+  }
+
+</style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="loader.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+</head>
+<body onload="myFunction()" style="margin:0; background:#e5eecc;">
+  <!--div id="loader"></div-->
+  <div id="loader" class="loadingio-spinner-radio-sgdjfrdkava"><div class="ldio-2cee7637o34">
+  <div></div><div></div><div></div>
+  </div></div>
+
+
+
+  <section style="display:none;" id="myDiv" class="animate-bottom">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq">
+    <div id="flip"><i id="plus"class="fa fa-plus"></i><i id="minus"class="fa fa-minus"></i>What is Dunda Homes Wireless?</div>
+    <div id="panel"><p>A service provided by Dunda Homes Networks that supplies unlimited internet to your home.
+    This allows you to have fast, dedicated internet for online jobs and entertainment from the comfort of your
+    premises. Once connected, a router will be provided to enable internet access.</p></div>
+    <div id="flip2"><i class="fa fa-plus"></i>How do I get connected?</div>
+    <div id="panel2"><p>A service provided by Dunda Homes Networks that supplies unlimited internet to your home.
+    This allows you to have fast, dedicated internet for online jobs and entertainment from the comfort of your
+    premises. Once connected, a router will be provided to enable internet access.</p></div>
+    </div>
+    </section>
+
+
+
+<script type="text/javascript" src="loader.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</section>
+</body>
+</html>
