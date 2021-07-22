@@ -2,11 +2,20 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dunda Homes</title>
+<meta name="description" content="Your fast fun & feasible Internet Provider.">
+<meta name="keywords" content=" dunda, networks, Internet, Wifi, ISP">
+<meta name=”robots” content="index, follow">
+<meta charset="UTF-8">
+<title>Dunda Networks</title>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/loader.css">
+<link rel="icon" href="img/logo.png" type="image/gif" sizes="32x32">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+<!--Scripts-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Scripts-->
 </head>
 <body onload="myFunction()" style="margin:0;">
 
@@ -28,7 +37,7 @@
       <a href="#entertainment">Entertainment</a>
       <a href="#contact">Contact</a>
       <a target="_blank" href="faq.html">FAQ</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="myNavbar()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
@@ -45,45 +54,59 @@
       <h1>Packages</h1>
     </div>
     <div style=" margin-top:10%;">
-      <div class="animation-element bounce-up">
+       <div id="p4" class="animation-element-package bounce-up">
         <div class=" package subject">
-        <img class="p_img" src="img/book-256.png" alt="" height="50px"; width="50px";>
+        <img src="img/mobile-phone-256.png" alt="" height="50px" width="50px">
+        <div id="pack2">
+        <h1>Economic Package(1Mbps)</h1>
+        <h3>1,299/=</h3>
+        <ul>
+          <li>Affordably browse and access online platforms</li>
+          <li>Valid for 30 days</li>
+          <li>Service fee applicable for installation</li>
+        </ul><br><br>
+      </div>
+      </div>
+      </div>
+      <div class="animation-element-package bounce-up">
+        <div class=" package subject">
+        <img class="p_img" src="img/book-256.png" alt="" height="50px" width="50px">
         <div id="pack">
-        <h1>Student's Package (3Mbps)</h1>
+        <h1>Standard Package(3Mbps)</h1>
         <h3>1,999/=</h3>
         <ul>
-          <li>Special package for learners to have access to various research and entertainment platforms</li>
+          <li>Special package for you to have access to various research and entertainment platforms</li>
           <li>Valid for 30 days</li>
           <li>Service fee applicable for installation</li>
         </ul>
       </div>
       </div>
       </div>
-      <div id="p2" class="animation-element bounce-up">
+      <div id="p2" class="animation-element-package bounce-up">
         <div class=" package subject">
-        <img src="img/computer-256.png" alt="" height="50px"; width="50px";>
+        <img src="img/computer-256.png" alt="" height="50px" width="50px">
         <div id="pack2">
-        <h1>Basic Package(10Mbps)</h1>
+        <h1>Basic Package(5Mbps)</h1>
         <h3>2,499/=</h3>
         <ul>
           <li>Browse the web, E-mail and stream standard definition media from your device.</li>
           <li>Valid for 30 days</li>
           <li>Service fee applicable for installation</li>
-        </ul>
+        </ul><br><br><br>
       </div>
       </div>
       </div>
-      <div id="p3" class="animation-element bounce-up">
+      <div id="p3" class="animation-element-package bounce-up">
         <div class=" package subject">
-        <img src="img/database-256.png" alt="" height="50px"; width="50px";>
-        <div id="pack3">
+        <img src="img/database-256.png" alt="" height="50px" width="50px">
+        <div id="">
         <h1>Advance Package(10Mbps)</h1>
         <h3>3,499/=</h3>
         <ul>
           <li>Game online and stream high definition media from multiple devices.</li>
           <li>Valid for 30 days</li>
           <li>Service fee applicable for installation</li>
-        </ul>
+        </ul><br><br>
       </div>
       </div>
     </div>
@@ -99,10 +122,10 @@
     <div style="">
       <div class="main">
         <h2>Who are we?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>We are the best new innovation in town providing quality internet services and IT solutions that make your life better and worthwhile.</p>
       </div>
       <div class="menu">
-        <img class="fade" src="img/img8.jpg" alt="" height="400px"; width="300px";>
+        <img class="fade" src="img/nesa.jpg" alt="" height="300px" width="450px">
       </div>
     </div>
     </section>
@@ -115,14 +138,14 @@
     </div>
     <div style="">
       <div class="e1 fade">
-        <img src="img/img10.jpg" alt="" height="400px"; width="270px";>
+        <img src="img/img10.jpg" alt="" height="400px" width="270px">
       </div>
       <div class="e2">
         <h2>Endless Possibilities to your Entertainment scope</h2>
         <p>Giving you unlimited internet for your social media applications Netflix, Showmax, Iflix and
         other streaming services. Enjoy the latest music, videos and movies with friends without bandwith limits.
-        All within the comfort of your home.</div>
-
+        All within the comfort of your home.</p>
+        </div>
     </section>
     <!--Entertainment-->
 
@@ -153,20 +176,20 @@
     </div>
     <div style="margin-top:1%;">
       <div class="animation-element bounce-up">
-        <div class="game subject">
-        <img src="img/img1.jpg" alt="" height="250px" width="410px">
+        <div id="g1" class="game subject">
+
         <h1>Playstation</h1>
       </div>
      </div>
       <div class="animation-element bounce-up">
-        <div class="game subject">
-        <img src="img/img9.jpg" alt="" height="250px" width="410px">
+        <div id="g2" class="game subject">
+
         <h1>Xbox</h1>
       </div>
       </div>
       <div class="animation-element bounce-up">
-      <div class="game subject">
-        <img src="img/img13.jpg" alt="" height="250px" width="410px">
+      <div id="g3" class="game subject">
+
         <h1>PC</h1>
       </div>
     </div>
@@ -186,10 +209,10 @@
         <p>Get E-Commerce services from online shops and banking partners and have purchases delivered to your doorstep.</p>
       </div>
       <div class="sh2">
-        <img src="img/ebay.png" alt="" height="100px"; width="200px";>
-        <img src="img/amaz2.png" alt="" height="100px"; width="200px";>
-        <img src="img/jumia.png" alt="" height="100px"; width="200px";>
-        <img src="img/alibaba.jpg" alt="" height="100px"; width="200px";>
+        <img src="img/ebay.png" alt="" height="100px" width="200px">
+        <img src="img/amaz2.png" alt="" height="100px" width="200px">
+        <img src="img/jumia.png" alt="" height="100px" width="200px">
+        <img src="img/alibaba.jpg" alt="" height="100px" width="200px">
       </div>
       </div>
     </div>
@@ -203,10 +226,10 @@
           <h1 style="color:#fff;">Contact Us</h1>
           <div class="single-footer">
             <h1>E-Mail Us:</h1>
-            <p>info@dundahomes.co.ke</p>
+            <p>info@dundanetworks.africa</p>
           </div>
           <div class="single-footer">
-            <img src="img/logo.png" alt="" height="30px"; width="70px";>
+            <img src="img/logo.png" alt="" height="200px" width="120px">
           </div>
           <div class="single-footer">
             <!--h2>Social Media</h2>
@@ -221,21 +244,20 @@
           </div>
         </div>
         <div class="copy">
-          <p>Made by Anvil &copy 2020</p>
+          <p style="text-align: center;">Made by Anvil Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
+
         </div>
 
       </footer>
   </section>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow.png" height="25px"; width="25px"; alt=""></button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow.png" height="25px" width="25px" alt=""></button>
   <!--Icons made by <a href="https://roundicons.com/" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/"
   title="Flaticon"> www.flaticon.com</a-->
 
-
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/style.js"></script>
   <script type="text/javascript" src="js/loader.js"></script>
   </section>
 </body>
 </html>
+
